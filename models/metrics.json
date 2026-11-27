@@ -1,0 +1,168 @@
+{
+  "random": {
+    "n_train": 55984,
+    "n_test": 13997,
+    "test_default_rate": 0.2023,
+    "models": {
+      "grade_only (benchmark)": {
+        "roc_auc": 0.6881,
+        "pr_auc": 0.3234,
+        "ks": 0.2846,
+        "brier": 0.1492,
+        "top_decile_default_rate": 0.4193,
+        "top_decile_lift": 2.07,
+        "roc_auc_ci95": [
+          0.677,
+          0.6999
+        ]
+      },
+      "borrower_logit": {
+        "roc_auc": 0.6985,
+        "pr_auc": 0.3632,
+        "ks": 0.2844,
+        "brier": 0.1481,
+        "top_decile_default_rate": 0.4407,
+        "top_decile_lift": 2.18,
+        "roc_auc_ci95": [
+          0.6877,
+          0.7095
+        ]
+      },
+      "borrower_gbm": {
+        "roc_auc": 0.6989,
+        "pr_auc": 0.3617,
+        "ks": 0.2884,
+        "brier": 0.1481,
+        "top_decile_default_rate": 0.4329,
+        "top_decile_lift": 2.14,
+        "roc_auc_ci95": [
+          0.688,
+          0.7098
+        ]
+      },
+      "full_logit": {
+        "roc_auc": 0.717,
+        "pr_auc": 0.3829,
+        "ks": 0.3152,
+        "brier": 0.1455,
+        "top_decile_default_rate": 0.4686,
+        "top_decile_lift": 2.32,
+        "roc_auc_ci95": [
+          0.7057,
+          0.7283
+        ]
+      },
+      "full_gbm": {
+        "roc_auc": 0.7162,
+        "pr_auc": 0.3797,
+        "ks": 0.3257,
+        "brier": 0.1458,
+        "top_decile_default_rate": 0.4721,
+        "top_decile_lift": 2.33,
+        "roc_auc_ci95": [
+          0.7049,
+          0.7278
+        ]
+      }
+    }
+  },
+  "mature": {
+    "n_train": 17853,
+    "n_test": 19470,
+    "test_default_rate": 0.1498,
+    "models": {
+      "grade_only (benchmark)": {
+        "roc_auc": 0.6643,
+        "pr_auc": 0.2329,
+        "ks": 0.2642,
+        "brier": 0.1222,
+        "top_decile_default_rate": 0.281,
+        "top_decile_lift": 1.88,
+        "roc_auc_ci95": [
+          0.6552,
+          0.6734
+        ]
+      },
+      "borrower_logit": {
+        "roc_auc": 0.6395,
+        "pr_auc": 0.2279,
+        "ks": 0.205,
+        "brier": 0.1236,
+        "top_decile_default_rate": 0.2655,
+        "top_decile_lift": 1.77,
+        "roc_auc_ci95": [
+          0.6304,
+          0.6492
+        ]
+      },
+      "borrower_gbm": {
+        "roc_auc": 0.6368,
+        "pr_auc": 0.2217,
+        "ks": 0.2052,
+        "brier": 0.1239,
+        "top_decile_default_rate": 0.2686,
+        "top_decile_lift": 1.79,
+        "roc_auc_ci95": [
+          0.6272,
+          0.6473
+        ]
+      },
+      "full_logit": {
+        "roc_auc": 0.6767,
+        "pr_auc": 0.2599,
+        "ks": 0.2674,
+        "brier": 0.1214,
+        "top_decile_default_rate": 0.3071,
+        "top_decile_lift": 2.05,
+        "roc_auc_ci95": [
+          0.6669,
+          0.6865
+        ]
+      },
+      "full_gbm": {
+        "roc_auc": 0.6713,
+        "pr_auc": 0.2563,
+        "ks": 0.255,
+        "brier": 0.1222,
+        "top_decile_default_rate": 0.3041,
+        "top_decile_lift": 2.03,
+        "roc_auc_ci95": [
+          0.6613,
+          0.6828
+        ]
+      }
+    }
+  },
+  "calibration_by_test_year_36m": [
+    {
+      "test_year": 2014,
+      "n_test": 11041,
+      "actual": 0.1387,
+      "predicted": 0.1294,
+      "gap_pts": 0.9,
+      "auc": 0.6443,
+      "outcomes_complete": true
+    },
+    {
+      "test_year": 2015,
+      "n_test": 19470,
+      "actual": 0.1498,
+      "predicted": 0.1381,
+      "gap_pts": 1.2,
+      "auc": 0.6395,
+      "outcomes_complete": true
+    },
+    {
+      "test_year": 2016,
+      "n_test": 15783,
+      "actual": 0.2008,
+      "predicted": 0.1462,
+      "gap_pts": 5.5,
+      "auc": 0.6718,
+      "outcomes_complete": false
+    }
+  ],
+  "diagnostics": {
+    "random_split_borrower_logit_without_term_auc": 0.6712
+  }
+}
