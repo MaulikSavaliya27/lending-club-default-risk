@@ -1,0 +1,34 @@
+feature,coef
+home_ownership_MORTGAGE,-0.4331
+purpose_small_business,0.4271
+term,0.4079
+purpose_credit_card,-0.4075
+verification_status_Not Verified,-0.398
+fico_avg,-0.3689
+purpose_car,-0.2608
+purpose_debt_consolidation,-0.2424
+home_ownership_OWN,-0.241
+dti,0.2269
+open_acc,0.2106
+verification_status_Verified,-0.1968
+total_acc,-0.1888
+log_revol_bal,-0.1769
+purpose_home_improvement,-0.1762
+verification_status_Source Verified,-0.1608
+loan_to_income,0.1315
+emp_missing,0.0926
+home_ownership_RENT,-0.0745
+loan_amnt,0.0717
+purpose_vacation,0.0421
+purpose_medical,-0.0364
+purpose_infrequent_sklearn,-0.0358
+log_income,-0.0274
+purpose_moving,-0.0273
+purpose_other,-0.0234
+purpose_house,-0.0147
+emp_years,-0.0139
+delinq_2yrs,0.0106
+revol_util,0.0097
+home_ownership_infrequent_sklearn,-0.0071
+pub_rec,0.0063
+purpose_major_purchase,-0.0004
